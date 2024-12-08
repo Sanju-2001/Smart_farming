@@ -33,34 +33,34 @@ with st.sidebar:
 if page_option == 'HOME':
     st.write('Agriculture plays a pivotal role in sustaining global food security and economic prosperity. However, farmers face challenges in selecting the most suitable crops for their specific agricultural conditions, leading to suboptimal yields and resource utilization. In this project, we propose a comprehensive solution leveraging machine learning techniques to assist farmers in making informed crop selection decisions. We explore the efficacy of three powerful algorithms: logistic regression, XGBoost, and AdaBoost, in predicting the optimal crops based on various environmental and soil factors. The dataset comprises historical agricultural data, including soil properties, climate conditions, and crop yields. We preprocess the data, perform feature engineering, and train the models using cross-validation techniques to ensure robustness and generalization. The performance of each algorithm is evaluated based on accuracy, precision, recall, and F1-score metrics.')
 
-    st.image(Image.open('0_agriculture.jpg'))
+    st.image(Image.open('images_farming/0_agriculture.jpg'))
 
 if page_option == 'EDA':
     st.subheader('Exploratory Data Analysis(EDA)')
     st.header('Violin plot')
-    st.image(Image.open('eda_1.png'))
+    st.image(Image.open('images_farming/eda_1.png'))
 
     st.header('Box plot')
-    st.image(Image.open('eda_2.png'))
+    st.image(Image.open('images_farming/eda_2.png'))
 
     st.header('Pie Chart')
-    st.image(Image.open('eda_3.png'))
+    st.image(Image.open('images_farming/eda_3.png'))
 
     st.header('Count Plot')
-    st.image(Image.open('eda_4.png'))
+    st.image(Image.open('images_farming/eda_4.png'))
 
 if page_option == 'MODELS':
     st.header('LOGISTIC REGRESSION')
     st.success('Logistic regression is a statistical method used for binary classification tasks, where the goal is to predict the probability that an instance belongs to a particular class. Despite its name, logistic regression is primarily used for classification rather than regression problems. It models the relationship between one or more independent variables and the probability of the outcome occurring using the logistic function. This function maps any real-valued number into a value between 0 and 1, making it suitable for modeling probabilities. Logistic regression is widely used in various fields, including medicine, economics, and social sciences, due to its simplicity, interpretability, and effectiveness, especially when dealing with linearly separable data.')
-    st.image(Image.open('1_logistic_regression.png'))
+    st.image(Image.open('images_farming/1_logistic_regression.png'))
     
     st.header('XGBOOST')
     st.error("XGBoost, short for eXtreme Gradient Boosting, is an advanced implementation of gradient boosting algorithms designed to optimize accuracy and computational speed. It is a supervised learning technique used for regression and classification problems. XGBoost builds a series of decision trees iteratively, where each new tree corrects the errors made by the previous one. It employs a gradient descent algorithm to minimize a loss function, enhancing the model's predictive power with each iteration. XGBoost is renowned for its efficiency, scalability, and performance, often outperforming other machine learning algorithms in various competitions and real-world applications. Its versatility and capability to handle large datasets with high dimensionality make it a popular choice among data scientists and machine learning practitioners.")
-    st.image(Image.open('2_xgboost.png'))
+    st.image(Image.open('images_farming/2_xgboost.png'))
 
     st.header('ADABOOST')
     st.warning("AdaBoost, short for Adaptive Boosting, is a popular ensemble learning technique used for classification and regression tasks. It works by combining multiple weak learners, typically decision trees, to create a strong learner. In each iteration, AdaBoost assigns higher weights to misclassified data points, allowing subsequent weak learners to focus more on these difficult instances. This iterative process continues until a predefined number of weak learners are added or until a perfect prediction is achieved. AdaBoost adjusts the contribution of each weak learner based on its performance, emphasizing the importance of difficult-to-classify instances. Despite its simplicity, AdaBoost often yields impressive results and is widely used in various machine learning applications for its effectiveness in handling complex datasets and improving predictive performance.")
-    st.image(Image.open('3_adaboost.png'))
+    st.image(Image.open('images_farming/3_adaboost.png'))
 
 if page_option == 'RECOMMENDATION':
     N=st.number_input("ENTER Nitrogen VALUE ",min_value=1)
